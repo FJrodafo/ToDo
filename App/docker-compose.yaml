@@ -1,0 +1,14 @@
+services:
+  to-do:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - to-do:/etc/todos
+    restart: unless-stopped
+
+volumes:
+  to-do:
+    external: true
