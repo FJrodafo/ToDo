@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://hub.docker.com/r/fjrodafo/ToDo">
+    <a href="https://hub.docker.com/r/fjrodafo/to-do">
         <picture>
             <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FJrodafo/ToDo/main/Assets/Banner/Dark.png">
             <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/FJrodafo/ToDo/main/Assets/Banner/Light.png">
