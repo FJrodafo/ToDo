@@ -1,9 +1,9 @@
 <div align="center">
-    <a href="https://hub.docker.com/r/fjrodafo/to-do">
+    <a href="https://hub.docker.com/r/fjrodafo/ToDo">
         <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FJrodafo/to-do/main/Assets/Banner/Dark.png">
-            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/FJrodafo/to-do/main/Assets/Banner/Light.png">
-            <img alt="to-do" src="https://raw.githubusercontent.com/FJrodafo/to-do/main/Assets/Banner/Light.png">
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FJrodafo/ToDo/main/Assets/Banner/Dark.png">
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/FJrodafo/ToDo/main/Assets/Banner/Light.png">
+            <img alt="ToDo" src="https://raw.githubusercontent.com/FJrodafo/ToDo/main/Assets/Banner/Light.png">
         </picture>
     </a>
 </div>

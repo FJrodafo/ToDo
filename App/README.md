@@ -1,4 +1,4 @@
-# to-do
+# ToDo
 
 Fast and minimalist to-do app!
 
@@ -10,7 +10,7 @@ Fast and minimalist to-do app!
 4. [Using Docker](#using-docker)
     1. [Run with Docker Compose](#run-with-docker-compose)
     2. [Build Docker image on your own](#build-docker-image-on-your-own)
-    3. [Pull the image from Docker Hub/GitHub Packages](#pull-the-image-from-docker-hubgithub-packages)
+    3. [Pull the image](#pull-the-image)
 5. [Resources](#resources)
 
 ## Attribution
@@ -76,7 +76,7 @@ Open your directory where you save your repositories and clone it with the follo
 
 ```shell
 # From GitHub
-git clone https://github.com/FJrodafo/to-do.git
+git clone https://github.com/FJrodafo/ToDo.git
 ```
 
 ## Using Docker
@@ -126,23 +126,25 @@ docker volume create to-do
 After the build completes, you can run your container with the following command:
 
 ```shell
-docker run -dp 127.0.0.1:3000:3000 --mount type=volume,src=to-do,target=/etc/todos to-do
+docker run -dp 127.0.0.1:3000:3000 --mount type=volume,src=to-do,target=/etc/todo to-do
 ```
 
 > [!NOTE]
 > 
 > After a few seconds, open your web browser to http://localhost:3000
 
-### Pull the image from Docker Hub/GitHub Packages
+### Pull the image
 
 There is a repository of this same project published in [Docker Hub](https://hub.docker.com/r/fjrodafo/to-do).
 
-In addition to Docker Hub, this application is available in [GitHub Packages](https://github.com/FJrodafo/to-do/pkgs/container/to-do).
+In addition to Docker Hub, this application is available in [GitHub Packages](https://github.com/FJrodafo/ToDo/pkgs/container/to-do).
 
 ```shell
 # Docker Hub
 docker pull fjrodafo/to-do:v1.0.0
+```
 
+```shell
 # GitHub Packages
 docker pull ghcr.io/fjrodafo/to-do:v1.0.0
 ```

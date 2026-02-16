@@ -1,5 +1,5 @@
 {
-  "name": "to-do",
+  "name": "@fjrodafo/to-do",
   "version": "1.0.0",
   "description": "Fast and minimalist to-do app!",
   "main": "index.js",

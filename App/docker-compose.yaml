@@ -6,7 +6,7 @@ services:
     environment:
       - NODE_ENV=production
     volumes:
-      - to-do:/etc/todos
+      - to-do:/etc/todo
     restart: unless-stopped
 
 volumes:
