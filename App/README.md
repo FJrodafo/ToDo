@@ -149,7 +149,7 @@ docker build -t to-do .
 After the build completes, you can run your container with the following command:
 
 ```shell
-docker run -dp 127.0.0.1:3000:3000 --mount type=volume,src=to-do,target=/etc/todo to-do
+docker run -dp 3000:3000 --mount type=volume,src=to-do,target=/etc/todo to-do
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your favorite browser to see the result.
