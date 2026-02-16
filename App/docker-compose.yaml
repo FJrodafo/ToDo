@@ -1,10 +1,10 @@
 services:
   to-do:
     build: .
+    image: to-do
+    container_name: to-do
     ports:
       - '3000:3000'
-    environment:
-      - NODE_ENV=production
     volumes:
       - to-do:/etc/todo
     restart: unless-stopped
