@@ -1,7 +1,5 @@
-name: Pipeline
-
+name: Pipeline deployment
 on: [push, pull_request]
-
 jobs:
   deployment:
     runs-on: ubuntu-latest
@@ -10,12 +8,10 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
-
       - name: Setup Node.js environment
         uses: actions/setup-node@v6
         with:
           node-version: "24"
-
       - name: Install dependencies
         working-directory: App
         run: yarn install --production
