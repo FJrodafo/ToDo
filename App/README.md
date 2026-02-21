@@ -132,7 +132,7 @@ Open [http://localhost:3000](http://localhost:3000) in your favorite browser to 
 
 If you prefer not to use Docker Compose, you can build and run the image manually.
 
-If you don't have Node v18 or higher installed on your machine, you can build a Docker image by running the [Dockerfile](./Dockerfile).
+If you don't have Node v18 or higher installed on your machine, you can build a Docker image by running the [Dockerfile](https://github.com/FJrodafo/ToDo/blob/main/App/Dockerfile).
 
 Create a volume by executing the following command:
 
