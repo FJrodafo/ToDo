@@ -2,6 +2,12 @@
 
 Fast and minimalist to-do app!
 
+![Docker Pulls](https://img.shields.io/docker/pulls/fjrodafo/to-do)
+![Docker Stars](https://img.shields.io/docker/stars/fjrodafo/to-do)
+![Docker Automated build](https://img.shields.io/docker/automated/fjrodafo/to-do)
+![Docker Image Size](https://img.shields.io/docker/image-size/fjrodafo/to-do)
+![Docker Image Version](https://img.shields.io/docker/v/fjrodafo/to-do)
+
 ## Index
 
 1. [Attribution](#attribution)
