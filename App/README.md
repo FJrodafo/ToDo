@@ -2,11 +2,10 @@
 
 Fast and minimalist to-do app!
 
-![Docker Pulls](https://img.shields.io/docker/pulls/fjrodafo/to-do)
-![Docker Stars](https://img.shields.io/docker/stars/fjrodafo/to-do)
-![Docker Automated build](https://img.shields.io/docker/automated/fjrodafo/to-do)
-![Docker Image Size](https://img.shields.io/docker/image-size/fjrodafo/to-do)
-![Docker Image Version](https://img.shields.io/docker/v/fjrodafo/to-do)
+[![GitHub Stars](https://img.shields.io/github/stars/FJrodafo/ToDo?style=social&logo=github&logoColor=000000&label=Stars&labelColor=ffffff&color=ffffff)](https://github.com/FJrodafo/ToDo/stargazers)
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/fjrodafo/to-do?style=flat&logo=docker&logoColor=ffffff&label=Pulls&labelColor=2560FF&color=2560FF)](https://hub.docker.com/r/fjrodafo/to-do)
+[![Image Size](https://img.shields.io/docker/image-size/fjrodafo/to-do?style=flat&logo=docker&logoColor=ffffff&label=Size&labelColor=2560FF&color=2560FF)](https://hub.docker.com/r/fjrodafo/to-do)
 
 ## Index
 
