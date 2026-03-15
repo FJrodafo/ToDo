@@ -9,24 +9,18 @@ Fast and minimalist to-do app!
 
 ## Index
 
-1. [Attribution](#attribution)
-2. [Project Structure](#project-structure)
-3. [Download the code](#download-the-code)
-4. [Using Docker](#using-docker)
+1. [Introduction](#introduction)
+2. [Download the code](#download-the-code)
+3. [Using Docker](#using-docker)
     1. [Run with Docker Compose (Recommended)](#run-with-docker-compose-recommended)
     2. [Build Docker image manually](#build-docker-image-manually)
-5. [Resources](#resources)
+4. [Resources](#resources)
+5. [Credits](#credits)
 
-## Attribution
-
-Forked from [docker/getting-started](https://github.com/docker/getting-started) with Apache-2.0 license
-
-This repository is a sample application for users following the getting started guide at https://docs.docker.com/get-started/
-
-## Project Structure
+## Introduction
 
 <details>
-<summary>Click me</summary>
+<summary>Project structure</summary>
 
 ```
 App/
@@ -163,8 +157,8 @@ Open [http://localhost:3000](http://localhost:3000) in your favorite browser to 
 > 
 > If you already have applications that use port 3000, you will need to change the host port before creating the Docker container so that it can run correctly on a free port.
 
-## Resources
+## Credits
 
-To see a more detailed explanation of how this Docker project works, visit the following repository on GitHub:
+Forked from [docker/getting-started](https://github.com/docker/getting-started) with Apache-2.0 license
 
-https://github.com/FJrodafo/University/blob/main/Cheat_sheets/Docker/README.md#overview-of-the-get-started-guide
+This repository is a sample application for users following the getting started guide at https://docs.docker.com/get-started/
