@@ -6,7 +6,8 @@
   "scripts": {
     "prettify": "prettier -l --write \"**/*.js\"",
     "test": "jest",
-    "dev": "nodemon -L src/index.js"
+    "dev": "nodemon -L src/index.js",
+    "tarball": "npm pack --dry-run"
   },
   "license": "MIT",
   "dependencies": {
