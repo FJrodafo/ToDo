@@ -13,5 +13,4 @@ jobs:
         with:
           node-version: "24"
       - name: Install dependencies
-        working-directory: App
         run: yarn install --production

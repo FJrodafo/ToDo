@@ -1,0 +1,14 @@
+# Git
+/.git
+/.github
+.gitattributes
+.gitignore
+
+# Dependencies
+/node_modules
+
+# VSCode
+/.vscode
+
+# Releases
+/releases/v*
