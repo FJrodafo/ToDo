@@ -1,14 +1,13 @@
 # Git
 /.git
-/.github
 .gitattributes
 .gitignore
 
-# Dependencies
-/node_modules
+# GitHub
+/.github
 
 # VSCode
 /.vscode
 
 # Releases
-/releases/v*
+/releases
