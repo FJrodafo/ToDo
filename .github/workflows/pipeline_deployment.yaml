@@ -11,6 +11,6 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v6
         with:
-          node-version: "24"
+          node-version: 24
       - name: Install dependencies
         run: yarn install --production
