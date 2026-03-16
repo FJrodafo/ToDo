@@ -87,12 +87,12 @@ Pull the image with the following commands:
 
 ```shell
 # Docker Hub
-docker pull fjrodafo/to-do:v1.0.1
+docker pull fjrodafo/to-do:1.0.0
 ```
 
 ```shell
 # GitHub Packages
-docker pull ghcr.io/fjrodafo/to-do:v1.0.1
+docker pull ghcr.io/fjrodafo/to-do:1.0.0
 ```
 
 ### Run with Docker Compose (Recommended)
