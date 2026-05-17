@@ -1,14 +1,25 @@
 services:
+  # ToDo
   to-do:
-    build: .
-    image: to-do
+    #build:
+    #  context: .
+    #  dockerfile: Dockerfile
+    image: fjrodafo/to-do:latest
     container_name: to-do
+    environment:
+      - NODE_ENV=production
     ports:
-      - "3000:3000"
+      - "127.0.0.1:3000:3000"
+    networks:
+      - to-do_network
     volumes:
       - to-do:/etc/todo
     restart: unless-stopped
-
+# Networks
+networks:
+  to-do_network:
+    name: to-do_network
+# Volumes
 volumes:
   to-do:
     external: true
