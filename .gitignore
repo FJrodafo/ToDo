@@ -1,7 +1,2 @@
 # Dependencies
 /node_modules
-
-# Releases
-/releases/*
-!releases/CHANGELOG.md
-!releases/VERSION.md
