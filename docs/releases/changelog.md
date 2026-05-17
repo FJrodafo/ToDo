@@ -30,11 +30,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - ...
 
-## [1.0.0] - 2026-03-16
+## [1.0.0] - 2026/05/17
 
 ### Added
 
-- All files (Existing project).
+- All files (Existing project FJrodafo's version).
 
 [Unreleased]: https://github.com/FJrodafo/ToDo/compare/1.0.0...HEAD
 [1.0.0]: https://github.com/FJrodafo/ToDo/releases/tag/1.0.0
