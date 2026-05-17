@@ -1,103 +1,60 @@
 # ToDo
 
-Fast and minimalist to-do app!
+[![GitHub Pages](https://img.shields.io/badge/%20-FFFFFF?style=social&logo=githubpages&logoColor=000000&logoSize=auto)](https://fjrodafo.github.io/ToDo/)
+[![GitHub Stars](https://img.shields.io/github/stars/FJrodafo/ToDo?style=social&logo=github&logoColor=000000&label=Stars&labelColor=FFFFFF&color=FFFFFF)](https://github.com/FJrodafo/ToDo/stargazers)
 
-[![GitHub Stars](https://img.shields.io/github/stars/FJrodafo/ToDo?style=social&logo=github&logoColor=000000&label=Stars&labelColor=ffffff&color=ffffff)](https://github.com/FJrodafo/ToDo/stargazers)
-
-[![Docker Pulls](https://img.shields.io/docker/pulls/fjrodafo/to-do?style=flat&logo=docker&logoColor=ffffff&label=Pulls&labelColor=2560FF&color=2560FF)](https://hub.docker.com/r/fjrodafo/to-do)
-[![Image Size](https://img.shields.io/docker/image-size/fjrodafo/to-do?style=flat&logo=docker&logoColor=ffffff&label=Size&labelColor=2560FF&color=2560FF)](https://hub.docker.com/r/fjrodafo/to-do)
+[![Docker Container](https://img.shields.io/badge/ToDo-2560FF?style=flat&logo=docker&logoColor=FFFFFF)](https://github.com/FJrodafo/ToDo/pkgs/container/to-do)
+[![Docker Pulls](https://img.shields.io/docker/pulls/fjrodafo/to-do?style=flat&logo=docker&logoColor=FFFFFF&label=Pulls&labelColor=2560FF&color=2560FF)](https://hub.docker.com/r/fjrodafo/to-do)
+[![Docker Image Size](https://img.shields.io/docker/image-size/fjrodafo/to-do?style=flat&logo=docker&logoColor=FFFFFF&label=Size&labelColor=2560FF&color=2560FF)](https://hub.docker.com/r/fjrodafo/to-do)
 
 ## Index
 
 1. [Introduction](#introduction)
-2. [Download the code](#download-the-code)
+2. [Clone the repository](#clone-the-repository)
 3. [Using Docker](#using-docker)
-    1. [Run with Docker Compose (Recommended)](#run-with-docker-compose-recommended)
-    2. [Build Docker image manually](#build-docker-image-manually)
-4. [Resources](#resources)
-5. [Credits](#credits)
+4. [Credits](#credits)
 
 ## Introduction
 
-<details>
-<summary>Project structure</summary>
+Fast and minimalist to-do app!
 
-```
-App/
-├── spec/
-│   ├── persistence/
-│   │   └── sqlite.spec.js
-│   └── routes/
-│       ├── addItem.spec.js
-│       ├── deleteItem.spec.js
-│       ├── getItems.spec.js
-│       └── updateItem.spec.js
-├── src/
-│   ├── persistence/
-│   │   ├── index.js
-│   │   ├── mysql.js
-│   │   └── sqlite.js
-│   ├── routes/
-│   │   ├── addItem.js
-│   │   ├── deleteItem.js
-│   │   ├── getItems.js
-│   │   └── updateItem.js
-│   ├── static/
-│   │   ├── css/
-│   │   │   ├── font-awesome/
-│   │   │   │   ├── all.min.css
-│   │   │   │   ├── *.eot
-│   │   │   │   ├── *.svg#fontawesome
-│   │   │   │   ├── *.ttf
-│   │   │   │   ├── *.woff
-│   │   │   │   └── *.woff2
-│   │   │   ├── bootstrap.min.css
-│   │   │   └── styles.css
-│   │   ├── js/
-│   │   │   ├── app.js
-│   │   │   ├── babel.min.js
-│   │   │   ├── react-bootstrap.js
-│   │   │   ├── react-dom.production.min.js
-│   │   │   └── react.production.min.js
-│   │   └── index.html
-│   └── index.js
-├── docker-compose.yaml
-├── Dockerfile
-├── package.json
-└── yarn.lock
-```
-</details>
+This project has been developed on a [Linux](https://github.com/torvalds/linux) system. To learn more about the system, visit the [Dotfiles](https://github.com/FJrodafo/Dotfiles) repository.
 
-## Download the code
+## Clone the repository
 
-Open your directory where you save your repositories and clone it with the following command:
+Open a terminal in the directory where you store your repositories and clone it with the following command:
 
 ```shell
-# From GitHub
+# HTTPS
 git clone https://github.com/FJrodafo/ToDo.git
+cd ToDo/
+```
+
+```shell
+# SSH
+git clone git@github.com:FJrodafo/ToDo.git
+cd ToDo/
 ```
 
 ## Using Docker
 
-This project can be run using Docker without installing Node.js locally.
+You can find a Docker image of this project ready to be pulled on [GitHub Packages](https://github.com/FJrodafo/ToDo/pkgs/container/to-do) or [Docker Hub](https://hub.docker.com/r/fjrodafo/to-do) official website!
 
-You can find a Docker image of this project ready to be pulled on [GitHub Packages](https://github.com/FJrodafo/ToDo/pkgs/container/to-do) or [Docker Hub](https://hub.docker.com/r/fjrodafo/to-do) website!
-
-Pull the image with the following commands:
-
-```shell
-# Docker Hub
-docker pull fjrodafo/to-do:1.0.0
-```
+Pull the latest image with the following commands:
 
 ```shell
 # GitHub Packages
-docker pull ghcr.io/fjrodafo/to-do:1.0.0
+docker pull ghcr.io/fjrodafo/to-do:latest
+```
+
+```shell
+# Docker Hub
+docker pull fjrodafo/to-do:latest
 ```
 
 ### Run with Docker Compose (Recommended)
 
-Make sure you have created a Docker volume named `to-do` before building the application with the following command:
+Make sure you have created a Docker volume named `to-do` with the following command:
 
 ```shell
 docker volume create to-do
@@ -109,10 +66,20 @@ Build the container:
 docker compose build
 ```
 
+> [!NOTE]
+> 
+> If you want to build the image locally, uncomment the `build` section in `docker-compose.yaml` and run `docker compose build`. Otherwise, skip directly to the next step.
+
 Run the container:
 
 ```shell
 docker compose up -d
+```
+
+Check the container logs:
+
+```shell
+docker logs -f to-do
 ```
 
 Stop the Container:
@@ -131,7 +98,7 @@ Open [http://localhost:3000](http://localhost:3000) in your favorite browser to 
 
 If you prefer not to use Docker Compose, you can build and run the image manually.
 
-If you don't have Node v18 or higher installed on your machine, you can build a Docker image by running the [Dockerfile](https://github.com/FJrodafo/ToDo/blob/main/App/Dockerfile).
+If you don't have Node v24.x or higher installed on your machine, you can build a Docker image by running the [Dockerfile](https://github.com/FJrodafo/ToDo/blob/main/Dockerfile).
 
 Create a volume by executing the following command:
 
@@ -139,26 +106,32 @@ Create a volume by executing the following command:
 docker volume create to-do
 ```
 
-Open a terminal and run the following command (Make sure you are in the `App` directory):
+Open a terminal and run the following command:
 
 ```shell
-docker build -t to-do .
+docker build -t to-do:latest .
 ```
 
 After the build completes, you can run your container with the following command:
 
 ```shell
-docker run -dp 3000:3000 --mount type=volume,src=to-do,target=/etc/todo to-do
+docker run -dp 127.0.0.1:3000:3000 --mount type=volume,src=to-do,target=/etc/todo to-do
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your favorite browser to see the result.
+Check the container logs:
 
-> [!IMPORTANT]
-> 
-> If you already have applications that use port 3000, you will need to change the host port before creating the Docker container so that it can run correctly on a free port.
+```shell
+docker ps -a
+docker logs -f <container_id>
+```
+
+Stop and remove the Container:
+
+```shell
+docker stop <container_id>
+docker rm <container_id>
+```
 
 ## Credits
 
-Forked from [docker/getting-started](https://github.com/docker/getting-started) with Apache-2.0 license
-
-This repository is a sample application for users following the getting started guide at https://docs.docker.com/get-started/
+Forked from [docker/getting-started](https://github.com/docker/getting-started) with Apache-2.0 license.
